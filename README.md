@@ -5,7 +5,7 @@
 ##本文主要使用的三个技术：
 * 推流：LFLiveKit
 * 播放：ijkplayer
-* 服务器:nginx+rtmp+ffmpeg
+* 服务器:nginx+rtmp+ffmpeg<br>
 有了这三点技术就可以完成一个简约的直播系统。效果图如下（右边的是用模拟器设备运行播放的，中间的是用VLC播放器播放的，当前在用手机推流直播）。<br>
 
 ![效果图.gif](http://upload-images.jianshu.io/upload_images/301102-f17034a855973086.gif?imageMogr2/auto-orient/strip)
