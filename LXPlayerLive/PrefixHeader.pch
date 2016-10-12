@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  LXPlayerLive
+//
+//  Created by 李旭 on 16/10/12.
+//  Copyright © 2016年 lixu. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+Extension.h"
+#import <IJKMediaFramework/IJKMediaFramework.h>
+
+#define LIVE_URL @"rtmp://192.168.15.122:1935/rtmplive/room"
+//   rtmp://live.hkstv.hk.lxdns.com:1935/live/stream153
+
+#define color(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//默认的统一背景色
+#define bgColor color(248, 248, 248)
+#define globalRedColor color(233,75,75)
+
+
+#endif /* PrefixHeader_pch */
