@@ -10,7 +10,9 @@
 #import "LFLivePreview.h"
 
 @interface LXLiveController ()
-
+{
+    LFLivePreview *livePreview;
+}
 @end
 
 @implementation LXLiveController
@@ -18,8 +20,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBarHidden = YES;
+}
 
-    [self.view addSubview:[[LFLivePreview alloc] initWithFrame:self.view.bounds]];
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:YES];
+    
+    livePreview = [[LFLivePreview alloc] initWithFrame:self.view.bounds];
+    [self.view addSubview:livePreview];
+}
+
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidAppear:YES];
+    [livePreview removeFromSuperview];
+    livePreview = nil;
+    [super viewDidDisappear:YES];
 }
 
 - (void)didReceiveMemoryWarning {
