@@ -32,7 +32,6 @@
 
 - (void)viewDidDisappear:(BOOL)animated
 {
-    [super viewDidAppear:YES];
     [livePreview removeFromSuperview];
     livePreview = nil;
     [super viewDidDisappear:YES];
